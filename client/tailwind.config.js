@@ -11,6 +11,7 @@ module.exports = {
       },
       boxShadow: {
         secondary: '10px 10px 20px rgba(2, 2, 2, 0.25)',
+        navbar: '10px 10px 20px rgba(2, 2, 2, 0.80)',
       },
       backgroundImage: {
         campaignProgress: "url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)",

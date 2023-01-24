@@ -13,8 +13,9 @@ module.exports = {
         secondary: '10px 10px 20px rgba(2, 2, 2, 0.25)',
       },
       backgroundImage: {
-        'campaign-progress': "url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)",
-      }
+        campaignProgress: "url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)",
+      },
+      screens: { 'mobile': { 'max': '640px' } },
     },
   },
   plugins: [],

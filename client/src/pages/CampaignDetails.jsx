@@ -51,7 +51,7 @@ const CampaignDetails = () => {
           </div>
         </div>
 
-        <div className="flex md:w-[300px] w-full flex-wrap justify-between gap-[30px]">
+        <div className="flex md:w-[33%] w-full flex-wrap justify-between gap-[30px]">
           <CountBox title="Days Left" value={remainingDays} />
           <CountBox title={`Raised of ${state.target}`} value={state.amountCollected} />
           <CountBox title="Total Backers" value={donators.length} />

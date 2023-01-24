@@ -1,6 +1,6 @@
 # React, Web3.0 Crowdfunding-Platform
 
-<img src="https://i.ibb.co/Zx45kx0/Explainer-Frame-3x.png">
+<img src="https://i.ibb.co/ctZmDRy/Explainer-Frame-min.png">
 
 The next-gen crowdfunding platform. Made with React, Solidity Smart Contracts, and ThirdWeb - This simple crowdfunding application allows users to back projects through the Blockchain and Ethereum.
 

@@ -16,7 +16,14 @@ module.exports = {
       backgroundImage: {
         campaignProgress: "url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)",
       },
-      screens: { 'mobile': { 'max': '640px' } },
+      screens: {
+        'mobile': { 
+          'max': '640px' 
+        },
+        'mobile2': { 
+          'min': '641px', 'max': '1028px' 
+        }
+      },
     },
   },
   plugins: [],

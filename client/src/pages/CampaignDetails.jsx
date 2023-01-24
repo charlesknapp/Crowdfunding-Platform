@@ -51,14 +51,14 @@ const CampaignDetails = () => {
           </div>
         </div>
 
-        <div className="flex md:w-[33%] w-full flex-wrap justify-between gap-[30px]">
+        <div className="flex md:w-[33%] w-full mobile:flex-wrap md:flex-wrap justify-between gap-[30px]">
           <CountBox title="Days Left" value={remainingDays} />
           <CountBox title={`Raised of ${state.target}`} value={state.amountCollected} />
           <CountBox title="Total Backers" value={donators.length} />
         </div>
       </div>
 
-      <div className="mt-[1rem] sm:mt-[60px] flex lg:flex-row flex-col gap-5">
+      <div className="mt-[1rem] mobile:mt-[1rem] flex lg:flex-row flex-col gap-5">
         <div className="flex-[2] flex flex-col gap-[40px]">
           <div>
             {/* <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">Creator</h4> */}

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import FundCard from './FundCard';
 import { loader } from '../assets';
+import Banner from './Banner';
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   const navigate = useNavigate();
@@ -13,9 +14,17 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   
   return (
     <div>
-      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({campaigns.length})</h1>
 
-      <div className="flex flex-wrap mt-[20px] gap-[26px]">
+        {/* {!isLoading && campaigns.length > 0 && campaigns.map((campaign) => <Banner 
+          key={campaign.id}
+          {...campaign}
+          handleClick={() => handleNavigate(campaign)}
+        />)} */}
+
+      <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({campaigns.length})</h1>
+      <h3 className="mb-[20px] mobile:max-w-[46ch] font-epilogue font-normal text-[16px] text-[#808190] text-left">Browse a list of all currently active campaigns.</h3>
+
+      <div className="flex mx-auto flex-wrap mt-[20px] gap-[26px]">
         {isLoading && (
           <img src={loader} alt="loader" className="w-[100px] h-[100px] object-contain" />
         )}

@@ -6,13 +6,9 @@ import { loader } from '../assets';
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   const navigate = useNavigate();
-  
-  let decodedUrl = campaign.title;
-  decodedUrl = decodedUrl.replace(/\s+/g, '-');
-  const urlDecoded = `/campaign-details/${decodedUrl}`
 
   const handleNavigate = (campaign) => {
-    navigate({urlDecoded}, { state: campaign })
+    navigate(`/campaign-details/${campaign.title.replace(/\s+/g, '-')}`, { state: campaign })
   }
   
   return (

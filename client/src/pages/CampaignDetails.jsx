@@ -100,7 +100,7 @@ const CampaignDetails = () => {
           <div className="mobile:mt-4 mr-2 w-[64px] h-[64px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
             <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain"/>
           </div>
-          <p className="mobile:max-w-[18ch] mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-center text-white">{state.title}</p>
+          <p className="max-w-[18ch] mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-center text-white">{state.title}</p>
         </div>
         {/* CAMPAIGN WIDGETS */}
         <div className="tablet:flex-col md:items-center flex w-full mobile:flex-wrap mobile:gap-3 gap-[1rem] sm:flex-wrap md:flex-wrap justify-between">

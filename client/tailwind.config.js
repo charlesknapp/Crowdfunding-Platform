@@ -18,11 +18,14 @@ module.exports = {
       },
       screens: {
         'mobile': { 
-          'max': '640px' 
+          'max': '767px' 
         },
         'mobile2': { 
           'min': '641px', 'max': '1028px' 
-        }
+        },
+        'mobile3': { 
+          'min': '641px', 'max': '767px' 
+        },
       },
     },
   },

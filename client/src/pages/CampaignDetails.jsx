@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Form, useLocation, useNavigate } from 'react-router-dom';
 import { ethers } from 'ethers';
-
+import { SiEthereum } from 'react-icons/si'
 import { useStateContext } from '../context';
 import { CountBox, CustomButton, Loader } from '../components';
 import { calculateBarPercentage, daysLeft } from '../utils';
@@ -42,28 +42,51 @@ const CampaignDetails = () => {
     <div>
       {isLoading && <Loader />}
 
-      <div className="w-full flex md:flex-row flex-col mt-10 gap-[30px]">
+      { /* LEFT COLUMN */ }
+      <div flex flex-col>
+      </div>
+      { /* RIGHT COLUMN */ }
+      <div>
+
+      </div>
+
+
+      <div className="mobile:gap-[2rem] w-full flex md:flex-row flex-col mt-10 gap-[3rem]">
         <div className="flex-1 flex-col">
           <img src={state.image} alt="campaign" className="w-full sm:h-[410px] h-[180px] object-cover rounded-t-lg"/>
           <div className="rounded-b-lg relative w-full h-[10px] bg-[#3a3a43] mt-2">
-            <div className="rounded-bl-lg absolute h-full bg-[url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)]" style={{ width: `${calculateBarPercentage(state.target, state.amountCollected)}%`, maxWidth: '100%'}}>
+            <div className="bg-cover rounded-bl-lg absolute h-full bg-[url(https://64.media.tumblr.com/1413b1c3862acbc67c42fe3df3609285/b6173f438e236e65-39/s400x600/3e5e6d34dfdd3e0ad9187c91f58f6c3e11d0efa2.gif)]" style={{ width: `${calculateBarPercentage(state.target, state.amountCollected)}%`, maxWidth: '100%'}}>
             </div>
           </div>
+          <p className="float-right mt-1 mobile:mb-4 mobile:text-[12px] font-epilogue font-normal text-[14px] text-[#808191]">
+              {calculateBarPercentage(state.target, state.amountCollected)}% left to complete this campaign
+          </p>
         </div>
 
-        <div className="flex md:w-[33%] w-full mobile:flex-wrap md:flex-wrap justify-between gap-[30px]">
+        <div className="md:items-center flex md:w-[33%] w-full mobile:flex-wrap mobile:gap-3 sm:gap-1 sm:flex-wrap md:flex-wrap justify-between">
           <CountBox title="Days Left" value={remainingDays} />
           <CountBox title={`Raised of ${state.target}`} value={state.amountCollected} />
           <CountBox title="Total Backers" value={donators.length} />
         </div>
       </div>
 
-      <div className="mt-[1rem] mobile:mt-[1rem] flex lg:flex-row flex-col gap-5">
-        <div className="flex-[2] flex flex-col gap-[40px]">
-          <div>
-            {/* <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">Creator</h4> */}
+      <div className="mb-[1.5rem] mobile:flex-col mt-[1.5rem] gap-2 items-center flex lg:flex-row sm:flex-col max-w-[100%]">
+        <div className="mobile:mt-4 mr-2 w-[52px] h-[52px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
+          <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain"/>
+        </div>
+        <p className="mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-white">{state.title}</p>
+        <p className="flex mobile:hidden lg:ml-auto font-epilogue font-normal text-[16px] text-[#808191]">
+          <SiEthereum />
+          {state.owner}
+        </p>
+      </div>
 
-            <div className="text-center sm:text-left sm:justify-start justify-center mt-[20px] flex flex-row items-center flex-wrap gap-[14px] bg-[#1c1c24] rounded-[36px] flex-1 gap-x-10	max-w-lg p-2">
+      <div className="items-center mt-[1rem] mobile:mt-[1rem] flex lg:flex-row flex-col gap-[3rem]">
+        <div className="flex-[2] flex flex-col mobile:max-w-[92%] gap-[40px]">
+          {/* <div>
+            <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">Creator</h4>
+
+            <div className="text-center sm:text-left sm:justify-start justify-center flex flex-row items-center flex-wrap gap-[14px] bg-[#1c1c24] rounded-[36px] flex-1 gap-x-10	max-w-lg p-2">
               <div className="w-[52px] h-[52px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
                 <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain"/>
               </div>
@@ -72,24 +95,25 @@ const CampaignDetails = () => {
                 <p className="mt-[4px] font-epilogue font-normal text-[12px] text-[#808191]">Campaign Starter</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div>
-            <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">Story</h4>
+            <h4 className="font-epilogue font-semibold text-[20px] text-white">Campaign Details</h4>
 
               <div className="mt-[20px]">
-                <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">{state.description}</p>
+                <p className="whitespace-pre-line font-epilogue font-normal text-[16px] md:mr-2 text-[#808191] leading-[26px] text-justify">{state.description}</p>
               </div>
           </div>
 
           <div>
-            <h4 className="font-epilogue font-semibold text-[22px] text-white uppercase">Donators</h4>
+            <h4 className="font-epilogue font-semibold text-[20px] text-white">Donator List</h4>
 
               <div className="mt-[20px] flex flex-col gap-4">
                 {donators.length > 0 ? donators.map((item, index) => (
-                  <div key={`${item.donator}-${index}`} className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                  <div key={`${item.donator}-${index}`} className="mobile:flex-row flex flex-col sm:flex-row justify-between items-center gap-4">
                     <p className="mobile:whitespace-nowrap mobile:w-[100%] mobile:text-ellipsis mobile: overflow-hidden font-epilogue font-normal text-[16px] text-[#b2b3bd] leading-[26px] break-ll">{index + 1}. {item.donator}</p>
-                    <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] break-ll">{item.donation} {currency}</p>
+                    <p className="font-epilogue font-normal text-[16px] text-[#1DC071] leading-[26px] break-ll">{item.donation}
+                    <span className="ml-1 text-[silver]">{currency}</span></p>
                   </div>
                 )) : (
                   <p className="font-epilogue font-normal text-[16px] text-[#808191] leading-[26px] text-justify">No donators yet. Be the first one!</p>

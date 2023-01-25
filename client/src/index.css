@@ -16,3 +16,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.8);
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1dc071 #13131a;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #13131a;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1dc071;
+    border-radius: 10px;
+    border: 2px solid #13131a;
+  }

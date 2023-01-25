@@ -7,11 +7,11 @@ import { CampaignDetails, CreateCampaign, Home, Profile } from './pages';
 const App = () => {
   return (
     <div className="relative sm:-8 p-4 bg-[#13131a] min-h-screen flex flex-row">
-      <div className="sm:flex hidden mr-10 relative">
+      <div className="sm:flex hidden tablet-s:mr-6 mr-10 relative">
         <Sidebar />
       </div>
 
-      <div className="flex-1 max-sm:w-full mobile:max-w-[100%] lg:max-w-[76%] max-w-[1368px] mx-auto sm:pr-5">
+      <div className="flex-1 4k:max-w-[96%] laptop-l:max-w-[92%] laptop:max-w-[90%] tablet-s:max-w-[86%] tablet:max-w-[86%] max-w-[90%] mx-auto sm:pr-5">
         <Navbar />
 
         <Routes>

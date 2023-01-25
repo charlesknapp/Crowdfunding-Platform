@@ -32,6 +32,12 @@ module.exports = {
         'tablet': { 
           'min': '768px' 
         },
+        'tablet-s': { 
+          'min': '376px', 'max': '767px'
+        },
+        'tablet-m': { 
+          'min': '1023px' 
+        },
         'laptop': { 
           'min': '1024px' 
         },
@@ -39,7 +45,7 @@ module.exports = {
           'min': '1140px' 
         },
         '4k': { 
-          'max': '2560px' 
+          'min': '2560px' 
         },
         'mobile2': { 
           'min': '641px', 'max': '1028px' 

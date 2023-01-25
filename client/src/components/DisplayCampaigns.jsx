@@ -5,6 +5,7 @@ import FundCard from './FundCard';
 import { loader } from '../assets';
 import Banner from './Banner';
 
+var featuredSize = 1;
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   const navigate = useNavigate();
 
@@ -14,8 +15,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   
   return (
     <div className="mx-auto">
-
-        {/* {!isLoading && campaigns.length > 0 && campaigns.map((campaign) => <Banner 
+        {/* {!isLoading && campaigns.length > 0 && campaigns.slice(0, featuredSize).map((campaign) => <Banner 
           key={campaign.id}
           {...campaign}
           handleClick={() => handleNavigate(campaign)}
@@ -23,6 +23,20 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
 
       <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({campaigns.length})</h1>
       <h3 className="mb-[20px] mobile:text-[14px] mobile:max-w-[46ch] font-epilogue font-normal text-[16px] text-[#808190] text-left">Browse a list of all currently active campaigns.</h3>
+
+      <div className="sorting-container">
+
+        <div className="flex flex-row gap-2 sorting-pills">
+          <div className="hover:text-[#cbcbcb] hover:transition-[0.2s] transition-[0.2s] cursor-pointer font-bold rounded-lg px-[12px] py-[6px] bg-[#1C1C24] text-[14px] text-[#808191] sort-by-last">
+            <h3>Sort by latest</h3>
+          </div>
+
+          <div className="hover:text-[#cbcbcb] hover:transition-[0.2s] transition-[0.2s] cursor-pointer font-bold rounded-lg px-[12px] py-[6px] bg-[#1C1C24] text-[14px] text-[#808191] sort-by-first">
+            <h3>Sort by oldest</h3>
+          </div>
+        </div>
+
+      </div>
 
       <div className="flex mx-auto flex-wrap justify-between mt-[20px]">
         {isLoading && (
@@ -35,7 +49,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
           </p>
         )}
 
-        {!isLoading && campaigns.length > 0 && campaigns.map((campaign) => <FundCard 
+        {!isLoading && campaigns.length > 0 && campaigns.slice(0).reverse().map((campaign) => <FundCard 
           key={campaign.id}
           {...campaign}
           handleClick={() => handleNavigate(campaign)}

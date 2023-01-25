@@ -22,11 +22,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className="max-w-[100%] mobile:mb-[1rem] flex md:flex-row flex-col-reverse justify-between mt-[0.35rem] mb-[35px] gap-6">
-      <div className="mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
+    <div className="max-w-[100%] mobile:mb-[1rem] flex md:flex-row flex-col-reverse justify-between mt-[0.35rem] mb-[35px] mobile:gap-[1.5rem] gap-6">
+      <div className="mobile:rounded-[8px] mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
         <input type="text" placeholder="Search for campaigns..." className="flex w-full font-epilogue font-normal text-[16px] placeholder:text-[#4b5264] text-white bg-transparent outline-none" />
         
-        <div className="w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer">
+        <div className="mobile:rounded-[8px] w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer">
           <img src={search} alt="search" className="w-[15px] h-[15px] object-contain"/>
         </div>
       </div>

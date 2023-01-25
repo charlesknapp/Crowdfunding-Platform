@@ -49,7 +49,7 @@ const CampaignDetails = () => {
         
         <div className="flex-1 flex-col">
           { /* CAMPAIGN IMAGE BANNER */ }
-          <Atropos activeOffset={5} rotateYMax={1} rotateXMax={1} shadow={false} highlight={false} className="mobile:hidden atropos-banner hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all">
+          <Atropos activeOffset={5} rotateYMax={1} rotateXMax={1} shadow={false} highlight={false} className="atropos-banner hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all">
           <div data-atropos-offset="0" className="flex-1 flex-col bg-[#1c1c24] md:p-4 rounded-xl">
               <img data-atropos-offset="0.5" src={state.image} alt="campaign" className="w-full sm:h-[410px] h-[180px] object-cover rounded-t-lg"/>
                 {/* PROGRESS */}

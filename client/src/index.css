@@ -17,6 +17,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0.8);
 }
 
+.atropos-banner {
+  width: 100%;
+}
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {

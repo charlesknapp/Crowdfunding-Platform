@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { logo, sun, createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import { logo, sun, thirdweb } from '../assets';
+import { useStateContext } from '../context';
+import { CustomButton } from './';
 import { navlinks } from '../constants';
 import { Tooltip, Button } from "@material-tailwind/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './sidebar.css'
+
+const connectWalletIcon = <FontAwesomeIcon icon={faEnvelope} />
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
   <div className={`w-[48px] h-[48px] rounded-[10px] ${isActive && isActive === name && 'bg-[#2c2f32]'} flex justify-center items-center ${!disabled && 'cursor-pointer'} ${styles}`} onClick={handleClick}>
@@ -18,6 +24,7 @@ const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
 const Sidebar = () => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState('dashboard');
+  const { connect, address } = useStateContext();
 
   return (
     <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]">
@@ -27,7 +34,7 @@ const Sidebar = () => {
 
       <div className="flex-1 flex flex-col justify-between items-center bg-[#1c1c24] rounded-[20px] w-[76px] py-4 mt-12">
         <div className="flex flex-col justify-center items-center gap-3">
-        
+        {/* ======================= TOP SIDEBAR BUTTONS ======================= */}
         {/* <Tooltip
             className="mobile:hidden shadow-lg ml-1 rounded-lg items-center text-[20px] bg-[#2c2f32]"
             content="Home"
@@ -74,6 +81,26 @@ const Sidebar = () => {
           ))
           }
         </div>
+        {/* ======================= BOTTOM SIDEBAR BUTTONS ======================= */}
+        <div className="flex flex-col justify-center items-center gap-4">
+        {/* CONNECT WALLET BUTTON */}
+        <CustomButton
+          btnType="button"
+          title={address ? 'Create' : 'Connect'}
+          styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+          handleClick={() => {
+            if(address) navigate('create-campaign')
+            else connect()
+          }}
+        />
+        {/* PROFILE PICTURE */}
+        <div className="bg-[#1c1c24] shadow-secondary w-[48px] h-[48px] rounded-[10px] flex justify-center items-center cursor-pointer">
+        <Link to="/profile">
+          <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
+            <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain" />
+          </div>
+        </Link>
+        </div>
 
         {/* <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} /> */}
         <div className="bg-[#1c1c24] shadow-secondary w-[48px] h-[48px] rounded-[10px] flex justify-center items-center cursor-pointer">
@@ -82,6 +109,7 @@ const Sidebar = () => {
                 <img src={sun} alt="Home" />
               </Button>
             </Tooltip>
+        </div>
         </div>
 
       </div>

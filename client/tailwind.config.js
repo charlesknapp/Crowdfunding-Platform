@@ -17,8 +17,29 @@ module.exports = {
         campaignProgress: "url(https://media.tenor.com/aV0h3VAHWUAAAAAC/gradient.gif)",
       },
       screens: {
+        'tiny': { 
+          'max': '390px' 
+        },
         'mobile': { 
-          'max': '767px' 
+          'max': '425px' 
+        },
+        'mobile-s': { 
+          'max': '320px' 
+        },
+        'mobile-m': { 
+          'max': '375px' 
+        },
+        'tablet': { 
+          'min': '768px' 
+        },
+        'laptop': { 
+          'min': '1024px' 
+        },
+        'laptop-l': { 
+          'min': '1140px' 
+        },
+        '4k': { 
+          'max': '2560px' 
         },
         'mobile2': { 
           'min': '641px', 'max': '1028px' 

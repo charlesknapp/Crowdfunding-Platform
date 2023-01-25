@@ -24,7 +24,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
       <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">{title} ({campaigns.length})</h1>
       <h3 className="mb-[20px] mobile:text-[14px] mobile:max-w-[46ch] font-epilogue font-normal text-[16px] text-[#808190] text-left">Browse a list of all currently active campaigns.</h3>
 
-      <div className="flex mx-auto flex-wrap justify-around mt-[20px]">
+      <div className="flex mx-auto flex-wrap justify-between mt-[20px]">
         {isLoading && (
           <img src={loader} alt="loader" className="w-[100px] h-[100px] object-contain" />
         )}

@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="max-w-[100%] mobile:mt-[-10px]] mobile:mb-[1rem] flex md:flex-row flex-col-reverse justify-between mt-[0.35rem] mb-[35px] mobile:gap-[1.5rem] gap-6">
+    <div className="max-w-[100%] mobile:mt-[-10px]] mobile:mb-[1rem] flex md:flex-row flex-col-reverse justify-between mt-[0.35rem] mb-[35px] mobile:gap-[2rem] gap-6">
       <div className="mobile:rounded-[8px] mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
         <input type="text" placeholder="Search for campaigns..." className="flex w-full font-epilogue font-normal text-[16px] placeholder:text-[#4b5264] text-white bg-transparent outline-none" />
         

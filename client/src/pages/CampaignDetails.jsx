@@ -43,9 +43,9 @@ const CampaignDetails = () => {
     <div>
       {isLoading && <Loader />}
       { /* FULL CONTAINER*/ }
-      <div className="mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
+      <div className="laptop-l:h-[86vh] laptop:h-[100%] tablet:h-[100%] mobile:h-[100%] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
       { /* ===================== LEFT COLUMN =====================*/ }
-      <div className="mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 p-2 mb-[2rem] select-none sm:p-4 rounded-2xl sm:flex-row">
+      <div className="laptop-l:overflow-auto mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 mobile:mb-[2rem] select-none p-2 rounded-2xl sm:flex-row">
         
         <div className="flex-1 flex-col">
           { /* CAMPAIGN IMAGE BANNER */ }
@@ -69,14 +69,14 @@ const CampaignDetails = () => {
           </div>
           </Atropos>
           {/* CAMPAIGN DETAILS */}
-          <div className="mobile:mt-[1rem] mt-[3rem] flex-1 flex-col">
+          <div className="mobile:mt-[1rem] mt-[2rem] flex-1 flex-col">
             <h4 className="font-epilogue font-semibold text-[20px] text-white">Campaign Details</h4>
             <div className="mt-[20px]">
               <p className="whitespace-pre-line font-epilogue font-normal text-[16px] md:mr-2 text-[#808191] leading-[26px] text-justify">{state.description}</p>
             </div>
           </div>
           {/* DONATOR LIST */}
-          <div className="mobile:mt-[1rem] mt-[3rem] flex-1 flex-col">
+          <div className="mobile:mt-[1rem] mt-[2rem] flex-1 flex-col">
             <h4 className="font-epilogue font-semibold text-[20px] text-white">Donator List</h4>
               <div className="mt-[20px] flex flex-col gap-4">
                 {donators.length > 0 ? donators.map((item, index) => (
@@ -94,13 +94,13 @@ const CampaignDetails = () => {
         </div>
       </div>
       { /* ===================== RIGHT COLUMN =====================*/ }
-      <div className="mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-1/4 gap-5 p-2 mb-[2rem] select-none sm:p-4 rounded-2xl mb-[2rem]">
+      <div className="laptop-l:left-0	laptop-l:sticky mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-1/4 gap-5 mobile:p-2 mobile:mb-[2rem] select-none sm:p-4 rounded-2xl">
 
-        <div className="mobile:mb-[0rem] mobile:mt-[0rem] mt-0 mb-[1.5rem] flex-col mt-[1.5rem] gap-2 items-center flex max-w-[100%]">
+        <div className="mobile:mb-[0rem] mobile:mt-[0rem] mt-0 flex-col gap-2 items-center flex max-w-[100%]">
           <div className="mobile:mt-4 mr-2 w-[64px] h-[64px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
             <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain"/>
           </div>
-          <p className="max-w-[18ch] mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-center text-white">{state.title}</p>
+          <p className="max-w-[20ch] laptop:text-[20px] mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-center text-white">{state.title}</p>
         </div>
         {/* CAMPAIGN WIDGETS */}
         <div className="tablet:flex-col md:items-center flex w-full mobile:flex-wrap mobile:gap-3 gap-[1rem] sm:flex-wrap md:flex-wrap justify-between">
@@ -119,7 +119,7 @@ const CampaignDetails = () => {
             <p className="font-epilogue fount-medium text-[20px] leading-[30px] text-center text-[#808191]">
               Fund the campaign
             </p>
-            <div className="mt-[30px]">
+            <div className="md:mt-1 mt-[30px]">
               <input 
                 type="number"
                 placeholder="ETH 0.1"
@@ -129,10 +129,10 @@ const CampaignDetails = () => {
                 onChange={(e) => setAmount(e.target.value)}
               />
 
-              <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
+              {/* <div className="my-[20px] p-4 bg-[#13131a] rounded-[10px]">
                 <h4 className="font-epilogue font-semibold text-[14px] leading-[22px] text-white">Back it because you believe in it.</h4>
-                <p className="mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Support the project for no reward, just because it speaks to you.</p>
-              </div>
+                <p className="laptop-xl:flex tablet:flex tablet-m:hidden sm:hidden mt-[20px] font-epilogue font-normal leading-[22px] text-[#808191]">Support the project for no reward, just because it speaks to you.</p>
+              </div> */}
 
               <CustomButton 
                 btnType="button"

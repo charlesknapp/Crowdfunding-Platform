@@ -50,6 +50,9 @@ module.exports = {
         'laptop-l': { 
           'min': '1140px' 
         },
+        'laptop-xl': { 
+          'min': '1440px' 
+        },
         '4k': { 
           'min': '2560px' 
         },

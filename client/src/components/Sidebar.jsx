@@ -7,6 +7,7 @@ import { navlinks } from '../constants';
 import { Tooltip, Button } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Atropos from 'atropos/react';
 import './sidebar.css'
 
 const connectWalletIcon = <FontAwesomeIcon icon={faEnvelope} />
@@ -67,6 +68,7 @@ const Sidebar = () => {
           </Tooltip> */}
 
           {navlinks.map((link) => (
+            <Atropos activeOffset={1} shadowScale={1} rotateYMax={-8} rotateXMax={-8} shadow={false} highlight={false} className="mobile:hidden rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
             <Icon className="sidebar__links-container"
             key={link.name}
               {...link}
@@ -78,6 +80,7 @@ const Sidebar = () => {
                 }
               }}
             />
+            </Atropos>
           ))
           }
         </div>

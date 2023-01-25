@@ -29,11 +29,17 @@ module.exports = {
         'mobile-m': { 
           'max': '375px' 
         },
+        'mobile-l': { 
+          'min': '390px', 'max': '639px'
+        },
+        'mobile-xl': { 
+          'max': '568px' 
+        },
         'tablet': { 
           'min': '768px' 
         },
         'tablet-s': { 
-          'min': '376px', 'max': '767px'
+          'min': '639px', 'max': '767px'
         },
         'tablet-m': { 
           'min': '1023px' 

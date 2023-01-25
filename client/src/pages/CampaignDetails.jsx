@@ -43,7 +43,7 @@ const CampaignDetails = () => {
     <div>
       {isLoading && <Loader />}
       { /* FULL CONTAINER*/ }
-      <div className="mobile-l:flex-col mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
+      <div className="mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
       { /* ===================== LEFT COLUMN =====================*/ }
       <div className="mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 p-2 mb-[2rem] select-none sm:p-4 rounded-2xl sm:flex-row">
         
@@ -57,7 +57,7 @@ const CampaignDetails = () => {
                 <div className="bg-cover rounded-bl-lg absolute h-full bg-[url(https://64.media.tumblr.com/1413b1c3862acbc67c42fe3df3609285/b6173f438e236e65-39/s400x600/3e5e6d34dfdd3e0ad9187c91f58f6c3e11d0efa2.gif)]" style={{ width: `${calculateBarPercentage(state.target, state.amountCollected)}%`, maxWidth: '100%'}}></div>
               </div>
               { /* ADDRESS */ }
-              <div data-atropos-offset="0.5" className="tablet-s:flex-col tablet-s:mt-[0.5rem] mobile:flex-col mobile:mt-1 mobile:mb-3 mobile:pl-3 mobile:pr-3 tablet:mt-2 flex flex-row justify-between items-center">
+              <div data-atropos-offset="0.5" className="tablet-s:flex-col tablet-s:mt-[0.5rem] mobile:flex-col mobile:justify-center mobile:mt-1 mobile:mb-3 mobile:pl-3 mobile:pr-3 tablet:mt-2 flex flex-row justify-between items-center">
                 <p className="mobile-xl:hidden mobile:text-[14px] tiny:hidden flex mobile:items-center mobile:justify-center mobile:text-[16px] font-epilogue font-normal text-[16px] text-[#808191]">
                   <SiEthereum />
                   {state.owner}
@@ -104,13 +104,13 @@ const CampaignDetails = () => {
         </div>
         {/* CAMPAIGN WIDGETS */}
         <div className="tablet:flex-col md:items-center flex w-full mobile:flex-wrap mobile:gap-3 gap-[1rem] sm:flex-wrap md:flex-wrap justify-between">
-          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="mobile:hidden rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
+          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
             <CountBox title="Days Left" value={remainingDays} />
           </Atropos>
-          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="mobile:hidden rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
+          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
             <CountBox title={`Raised of ${state.target}`} value={state.amountCollected} />
           </Atropos>
-          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="mobile:hidden rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
+          <Atropos activeOffset={12} rotateYMax={8} rotateXMax={8} shadow={false} highlight={false} className="rounded-xl hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all atropos-banner">
             <CountBox title="Total Backers" value={donators.length} />
           </Atropos>
         </div>

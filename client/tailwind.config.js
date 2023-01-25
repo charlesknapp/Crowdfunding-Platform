@@ -21,7 +21,7 @@ module.exports = {
           'max': '390px' 
         },
         'mobile': { 
-          'max': '425px' 
+          'max': '428px' 
         },
         'mobile-s': { 
           'max': '320px' 
@@ -58,6 +58,9 @@ module.exports = {
         },
         'mobile3': { 
           'min': '641px', 'max': '767px' 
+        },
+        'mobile4': { 
+          'max': '639px' 
         },
       },
     },

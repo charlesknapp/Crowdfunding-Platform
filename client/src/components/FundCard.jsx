@@ -7,7 +7,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
   const remainingDays = daysLeft(deadline);
   
   return (
-    <div className="mobile:mb-4 tablet-s:mb-6 sm:mb-6 4k:w-[18%] tablet:w-[48%] laptop:w-[30%] laptop-l:w-[23%] hover:scale-[1.02] transition-all hover:transition-all w-full rounded-[15px] bg-[#1c1c24] cursor-pointer" onClick={handleClick}>
+    <div className="mobile:mb-4 tablet-s:mb-6 sm:mb-6 4k:w-[18%] tablet:w-[48%] laptop:w-[46%] laptop-l:w-[23%] hover:scale-[1.02] transition-all hover:transition-all w-full rounded-[15px] bg-[#1c1c24] cursor-pointer" onClick={handleClick}>
       <img src={image} alt="fund" className="w-full h-[158px] object-cover rounded-t-lg"/>
 
       <div className="flex flex-col p-4">

@@ -12,6 +12,8 @@ import menu from './menu.svg';
 import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
+import avatar from './avatar.png';
+import avatarnone from './avatarnone.png';
 
 export {
   tagType,
@@ -28,4 +30,6 @@ export {
   money,
   loader,
   thirdweb,
+  avatar,
+  avatarnone,
 };

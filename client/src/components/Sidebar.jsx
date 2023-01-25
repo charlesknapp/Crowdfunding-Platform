@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { logo, sun, thirdweb } from '../assets';
+import { avatar, avatarnone, logo, sun, thirdweb } from '../assets';
 import { useStateContext } from '../context';
 import { CustomButton } from './';
 import { navlinks } from '../constants';
@@ -100,7 +100,7 @@ const Sidebar = () => {
         <div className="bg-[#1c1c24] shadow-secondary w-[48px] h-[48px] rounded-[10px] flex justify-center items-center cursor-pointer">
         <Link to="/profile">
           <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
-            <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain" />
+            <img src={address ? `${avatar}` : `${avatarnone}`} alt="user" className="w-[60%] h-[60%] object-contain" />
           </div>
         </Link>
         </div>

@@ -4,7 +4,7 @@ import { Cta_1, Cta_2, Teams } from './'
 
 const Hero = () => {
   return (
-    <div className="xs:max-h-[80vh] xl:max-h-[86vh] max-h-[84vh] overflow-auto  rounded-xl dark:bg-[rgba(0,0,0,0.0)]">
+    <div className="xs:max-h-[75vh] xl:max-h-[86vh] max-h-[84vh] overflow-auto  rounded-xl dark:bg-[rgba(0,0,0,0.0)]">
         <Cta_1 />
         <Cta_2 />
         <Teams />

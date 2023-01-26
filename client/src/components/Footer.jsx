@@ -3,25 +3,21 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-        <footer className="mt-[2rem] mobile:py-2 px-3 py-8 text-gray-500 transition-colors duration-200 bg-white dark:bg-[#1c1c24] rounded-xl text-2 dark:text-[#808191]">
+        <footer className="py-2 z-[200] relative shadow-[0px_-15px_26px_#13131a] mobile:py-2 px-3 text-gray-500 transition-colors duration-200 bg-white dark:bg-[#1c1c24] rounded-xl text-2 dark:text-[#808191]">
             <div className="flex flex-col">
-                <div className="h-px mx-auto rounded-full md:hidden mt-7 w-11">
-                </div>
-                <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
-                    <nav className="flex flex-col items-center justify-center flex-1 border-[#2e2e38] md:items-end md:border-r md:pr-5">
+                <div className="xs:text-[11px] sm:text-[16px] md:text-[14px] text-[40px] flex mt-0 flex-row">
+                    <nav className="gap-0 sm:gap-2 flex flex-row items-center justify-around flex-1 border-[#2e2e38] md:border-r md:pr-5">
                         <a aria-current="page" href="#" className="hover:text-gray-700 dark:hover:text-white">
-                            Home Page
+                            Home
                         </a>
                         <a aria-current="page" href="#" className="hover:text-gray-700 dark:hover:text-white">
-                            Signup / Login
+                            Signup
                         </a>
                         <a aria-current="page" href="#" className="hover:text-gray-700 dark:hover:text-white">
-                            Contact Us
+                            Contact
                         </a>
                     </nav>
-                    <div className="h-px mx-auto mt-4 rounded-full mobile:hidden md:hidden w-11">
-                    </div>
-                    <div className="flex items-center justify-center flex-1 mt-4 border-[#2e2e38] md:mt-0 md:border-r">
+                    <div className="flex items-center justify-center flex-1 border-[#2e2e38] md:mt-0 md:border-r">
                         <a className="hover:text-primary-gray-20" href="https://github.com/charlesknapp/crowdfunding-platformt">
                             <span className="sr-only">
                                 View on GitHub
@@ -32,14 +28,12 @@ const Footer = () => {
                             </svg>
                         </a>
                     </div>
-                    <div className="h-px mx-auto mt-4 rounded-full md:hidden w-11 ">
-                    </div>
-                    <div className="flex flex-col items-center justify-center flex-1 mt-7 md:mt-0 md:items-start md:pl-5">
+                    <div className="sm:gap-2 flex flex-row items-center justify-around flex-1 md:pl-5">
                         <span className="">
-                            © Copyright 2023
+                            © 2023
                         </span>
-                        <span className="mt-7 md:mt-1">
-                            By <a className="underline hover:text-primary-gray-20" href="https://www.linkedin.com/in/knappcharles/">Cadogy, LLC.</a>
+                        <span>
+                            <a className="underline hover:text-primary-gray-20" href="https://www.linkedin.com/in/knappcharles/">Cadogy, LLC.</a>
                         </span>
                     </div>
                 </div>

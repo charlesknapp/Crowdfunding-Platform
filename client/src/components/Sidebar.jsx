@@ -30,8 +30,8 @@ const Sidebar = () => {
   const { connect, address } = useStateContext();
 
   return (
-    <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]">
-      <Link className="transition-all mt-2" to="/">
+    <div className="flex justify-between items-center flex-col sticky top-4 h-[95vh]">
+      <Link className="mt-[-0.25rem] transition-all" to="/">
         <Icon styles="bg-[#2c2f32]" imgUrl={logo} />
       </Link>
 

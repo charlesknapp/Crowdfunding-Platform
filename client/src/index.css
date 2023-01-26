@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/** ================= COLOR PALLATE - STYLE SUITE ================= **/
+:root {
+  --color-primary: #4ACD8D;
+  --color-secondary: #8C6DFD;
+}
+/** ================= COLOR PALLATE - STYLE SUITE ================= **/
+
 .linear-gradient {
   background: linear-gradient(
     179.14deg,

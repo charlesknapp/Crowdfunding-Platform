@@ -13,8 +13,8 @@ const Navbar = () => {
   const { connect, address } = useStateContext();
 
   return (
-    <div className="md:z-50 max-w-[100%] mobile:mt-[-10px]] mobile:mb-[1rem] flex md:flex-row flex-col-reverse justify-between mt-[0.35rem] mb-[35px] mobile:gap-[2rem] lg:gap-6">
-      <div id="searchBar" className="shadow-[0px_6px_24px_[#13131a]] mobile:rounded-[8px] mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
+    <div className="flex mobile:rounded-[8px] flex-row z-50 max-w-[100%] flex-col-reverse md:flex-row justify-between mt-[0.75rem]">
+      <div id="searchBar" className="z-[100] shadow-[0_18px_25px_rgba(19,19,26,1)] mobile:rounded-[8px] mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
         <input type="text" placeholder="Search for campaigns..." className="flex w-full font-epilogue font-normal text-[16px] placeholder:text-[#4b5264] text-white bg-transparent outline-none" />
         
         <div className="mobile:rounded-[8px] w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer">
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div> */}
 
       {/* Small screen navigation */}
-        <div className="mobile:mt-[-15px] mobile:mb-2 w-[96%] mx-auto sm:hidden flex justify-between items-center relative">
+        <div className="mobile:mb-2 w-[96%] mx-auto sm:hidden flex justify-between items-center relative">
         <div className="w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <Link className="flex items-center justify-center" to="/">
               <img src={logo} alt="user" className="w-[60%] h-[60%] object-contain" />
@@ -55,7 +55,7 @@ const Navbar = () => {
             onClick={() => setToggleDrawer((prev) => !prev)}
           />
 
-          <div className={`shadow-navbar rounded-xl absolute top-[60px] right-0 left-0 bg-[#1c1c24] z-10 shadow-secondary py-4 ${!toggleDrawer ? '-translate-y-[100vh]' : 'translate-y-0'} transition-all duration-700`}>
+          <div className={`shadow-navbar rounded-xl absolute top-12 right-0 left-0 bg-[#1c1c24] z-[500] shadow-secondary py-4 ${!toggleDrawer ? '-translate-y-[100vh]' : 'translate-y-0'} transition-all duration-700`}>
             <ul className="mb-4">
               {navlinks.map((link) => (
                 <li

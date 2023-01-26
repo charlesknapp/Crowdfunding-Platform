@@ -41,13 +41,13 @@ const CreateCampaign = () => {
   }
 
   return (
-    <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
+    <div className="px-6 mt-4 rounded-bl-[0px] ml-3 xs:max-h-[78vh] xl:max-h-[84vh] md:max-h-[84vh] max-h-[84vh] overflow-auto  rounded-xl dark:bg-[#1C1C24]">
       {isLoading && <Loader />}
-      <div className="flex justify-center items-center p-[10px] mobile:p-[4px] mobile:min-w-[100%] min-w-[90%] sm:min-w-[90%] bg-[#3a3a43] rounded-[10px]">
+      <div className="mt-6 flex justify-center items-center p-[10px] mobile:p-[4px] mobile:min-w-[100%] min-w-[90%] sm:min-w-[90%] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
       </div>
 
-      <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
+      <form onSubmit={handleSubmit} className="w-full xs:mt-[2rem] mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
           <FormField 
             labelName="Your Name *"
@@ -103,11 +103,11 @@ const CreateCampaign = () => {
             handleChange={(e) => handleFormFieldChange('image', e)}
           />
 
-          <div className="flex justify-center items-center mt-[40px]">
+          <div className="flex justify-center items-center mb-[40px] mt-[40px]">
             <CustomButton 
               btnType="submit"
               title="Submit new campaign"
-              styles="bg-[#1dc071]"
+              styles="bg-[#1dc071] w-full py-3"
             />
           </div>
       </form>

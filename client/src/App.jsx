@@ -6,7 +6,7 @@ import { Login, Landing, CampaignDetails, CreateCampaign, Home, Profile } from '
 
 const App = () => {
   return (
-    <div className="relative sm:-8 px-4 bg-[#13131a] min-h-screen flex flex-row">
+    <div className="transition-[0.2s] relative sm:-8 px-4 bg-[#13131a] min-h-screen flex flex-row">
       <div className="my-auto sm:flex hidden tablet-s:mr-6 mr-4 relative">
         <Sidebar />
       </div>

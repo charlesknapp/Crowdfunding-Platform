@@ -41,7 +41,7 @@ const CreateCampaign = () => {
   }
 
   return (
-    <div className="px-6 mt-4 rounded-bl-[0px] ml-3 xs:max-h-[78vh] xl:max-h-[84vh] md:max-h-[84vh] max-h-[84vh] overflow-auto  rounded-xl dark:bg-[#1C1C24]">
+    <div className="px-6 rounded-bl-[0px] ml-3 xs:max-h-[78vh] xl:max-h-[86vh] md:max-h-[84vh] max-h-[84vh] overflow-auto  rounded-xl">
       {isLoading && <Loader />}
       <div className="mt-6 flex justify-center items-center p-[10px] mobile:p-[4px] mobile:min-w-[100%] min-w-[90%] sm:min-w-[90%] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>

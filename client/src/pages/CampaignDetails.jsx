@@ -43,14 +43,14 @@ const CampaignDetails = () => {
     <div>
       {isLoading && <Loader />}
       { /* FULL CONTAINER*/ }
-      <div className="laptop-l:h-[86vh] laptop:h-[100%] tablet:h-[100%] mobile:h-[100%] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
+      <div className="laptop-l:h-[86vh] laptop:h-[85vh] tablet:h-[85vh] mobile:h-[80vh] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
       { /* ===================== LEFT COLUMN =====================*/ }
       <div id="campaignDetailCol" className="laptop-l:overflow-auto mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 mobile:mb-[2rem] select-none p-2 rounded-2xl sm:flex-row">
         
         <div className="flex-1 flex-col">
           { /* CAMPAIGN IMAGE BANNER */ }
           <Atropos activeOffset={5} rotateYMax={1} rotateXMax={1} shadow={false} highlight={false} className="atropos-banner hover:transition-all hover:shadow-[0_0px_35px_0px_rgba(0,0,0,0.3)] transition-all">
-          <div data-atropos-offset="0" className="flex-1 flex-col bg-[#1c1c24] md:p-4 rounded-xl">
+          <div data-atropos-offset="0" className="flex-1 flex-col bg-[#1c1c24] mt-1 md:p-4 rounded-xl">
               <img data-atropos-offset="0.5" src={state.image} alt="campaign" className="w-full sm:h-[410px] h-[180px] object-cover rounded-t-lg"/>
                 {/* PROGRESS */}
               <div data-atropos-offset="0.5" className="tablet:mt-0 rounded-b-lg relative w-full h-[10px] bg-[#3a3a43] md:mt-2">
@@ -76,7 +76,7 @@ const CampaignDetails = () => {
             </div>
           </div>
           {/* DONATOR LIST */}
-          <div className="mobile:mt-[1rem] mt-[2rem] flex-1 flex-col">
+          <div className="mobile:mt-[1rem] mobile:pb-0 pb-[2rem] mt-[2rem] flex-1 flex-col">
             <h4 className="font-epilogue font-semibold text-[20px] text-white">Donator List</h4>
               <div className="mt-[20px] flex flex-col gap-4">
                 {donators.length > 0 ? donators.map((item, index) => (
@@ -94,7 +94,7 @@ const CampaignDetails = () => {
         </div>
       </div>
       { /* ===================== RIGHT COLUMN =====================*/ }
-      <div className="laptop-l:left-0	laptop-l:sticky mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-1/4 gap-5 mobile:p-2 mobile:mb-[2rem] select-none sm:p-4 rounded-2xl">
+      <div className="justify-center laptop-l:left-0	laptop-l:sticky mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-1/4 gap-5 mobile:p-2 mobile:mb-[2rem] select-none sm:p-4 rounded-2xl">
 
         <div className="mobile:mb-[0rem] mobile:mt-[0rem] mt-0 flex-col gap-2 items-center flex max-w-[100%]">
           <div className="mobile:mt-4 mr-2 w-[64px] h-[64px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">

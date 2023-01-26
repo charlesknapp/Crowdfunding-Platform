@@ -13,7 +13,7 @@ const Navbar = () => {
   const { connect, address } = useStateContext();
 
   return (
-    <div className="flex mobile:rounded-[8px] flex-row z-50 max-w-[100%] flex-col-reverse md:flex-row justify-between mt-[0.75rem]">
+    <div className="flex mobile:rounded-[8px] flex-row z-50 max-w-[100%] flex-col-reverse md:flex-row justify-between">
       <div id="searchBar" className="z-[100] shadow-[0_18px_25px_rgba(19,19,26,1)] mobile:rounded-[8px] mx-auto lg:flex-1 flex flex-row w-[98%] py-2 pl-4 pr-2 h-[48px] bg-[#1c1c24] rounded-[100px]">
         <input type="text" placeholder="Search for campaigns..." className="flex w-full font-epilogue font-normal text-[16px] placeholder:text-[#4b5264] text-white bg-transparent outline-none" />
         

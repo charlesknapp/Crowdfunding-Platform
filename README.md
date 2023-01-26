@@ -2,6 +2,10 @@
 
 <img src="https://i.ibb.co/ctZmDRy/Explainer-Frame-min.png">
 
+## [ NEW ] - Variant 2 Under Development
+<p>This site variant brings a sticky navbar, sidebar, and modern content displays.</p>
+<img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png">
+
 The next-gen crowdfunding platform. Made with React, Solidity Smart Contracts, and ThirdWeb - This simple crowdfunding application allows users to back projects through the Blockchain and Ethereum.
 
 ## Wireframe (Figma)

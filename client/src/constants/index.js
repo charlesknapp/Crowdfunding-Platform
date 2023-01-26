@@ -2,39 +2,39 @@ import { createCampaign, dashboard, logout, payment, profile, withdraw } from '.
 
 export const navlinks = [
   {
-    name: 'dashboard',
+    name: 'Campaigns',
     friendlyName: 'Campaigns',
     imgUrl: dashboard,
     link: '/all-campaigns',
   },
   {
-    name: 'campaign',
+    name: 'Create Campaign',
     friendlyName: 'Create Campaign',
     imgUrl: createCampaign,
     link: '/create-campaign',
   },
   {
-    name: 'payment',
+    name: 'Payment Options',
     friendlyName: 'Payment Options',
     imgUrl: payment,
     link: '/',
     disabled: true,
   },
   {
-    name: 'withdraw',
+    name: 'Widthdraw Funds',
     friendlyName: 'Widthdraw Funds',
     imgUrl: withdraw,
     link: '/',
     disabled: true,
   },
   {
-    name: 'profile',
+    name: 'My Profile',
     friendlyName: 'My Profile',
     imgUrl: profile,
     link: '/profile',
   },
   {
-    name: 'logout',
+    name: 'Log Out',
     friendlyName: 'Log Out',
     imgUrl: logout,
     link: '/',

@@ -41,7 +41,7 @@ const Navbar = () => {
       </div> */}
 
       {/* Small screen navigation */}
-        <div className="mobile:mt-[-10px] mobile:mb-3 w-[96%] mx-auto sm:hidden flex justify-between items-center relative">
+        <div className="mobile:mt-[-15px] mobile:mb-2 w-[96%] mx-auto sm:hidden flex justify-between items-center relative">
         <div className="w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <Link className="flex items-center justify-center" to="/">
               <img src={logo} alt="user" className="w-[60%] h-[60%] object-contain" />

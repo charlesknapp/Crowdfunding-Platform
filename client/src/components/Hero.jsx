@@ -52,7 +52,7 @@ const Hero = () => {
                 <h4 class="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
                     <b className="text-[#4ACD8D]">KROWD</b> is built for all device sizes
                 </h4>
-                <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                <p class="l:max-w-[60ch] text-md xl:text-xl xl:mt-12 mt-4 text-gray-400">
                     With full mobile, tablet, and desktop responsive screen designs, your next campaign project looks clean from the start.
                     We're even compatible with retina and 4K devices!
                 </p>
@@ -128,11 +128,11 @@ const Hero = () => {
 
     { /* ============================ MEMBERS ELEMENT ============================ */ }
     <div className="xl:text-end flex-col bg-white rounded-b-xl dark:bg-[#1c1c24] overflow-hidden relative lg:flex">
-        <div className="flex flex-col xl:py-16 mobile:mx-[1rem] md:mx-[3rem] xl:mx-[6rem]">
+        <div className="flex flex-col xl:py-12 mobile:mx-[1rem] md:mx-[3rem] xl:mx-[6rem]">
             <p className="text-center lg:text-left xl:max-w-[48ch] mobile:mb-4 text-[22px] sm:text-[30px] md:text-[26px] lg:text-[28px] xl:text-[40px] xl:text-left font-bold text-gray-800 dark:text-white">
                 Join the Movement Towards a More Decentralized World
             </p>
-            <p className="md:mt-5 xl:text-left mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-300">
+            <p className="l:max-w-[60ch] md:mt-5 xl:text-left mb-12 text-xl font-normal text-center text-gray-400">
                 Meet some of the members who've received funding on their projects.
             </p>
         </div>

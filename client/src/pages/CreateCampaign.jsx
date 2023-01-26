@@ -47,15 +47,15 @@ const CreateCampaign = () => {
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
       </div>
 
-      <form onSubmit={handleSubmit} className="w-full xs:mt-[2rem] mt-[65px] flex flex-col gap-[30px]">
+      <form onSubmit={handleSubmit} className="w-full xs:mt-[2rem] mt-[1rem] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
-          <FormField 
+          {/* <FormField 
             labelName="Your Name *"
             placeholder="John Doe"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
-          />
+          /> */}
           <FormField 
             labelName="Campaign Title *"
             placeholder="Write a title"

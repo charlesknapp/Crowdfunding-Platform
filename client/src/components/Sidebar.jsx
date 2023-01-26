@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { avatar, avatarnone, logo, sun, thirdweb } from '../assets';
+import { avatar, avatarnone, logo, sun } from '../assets';
 import { useStateContext } from '../context';
 import { CustomButton } from './';
 import { navlinks } from '../constants';
 import { Tooltip, Button } from "@material-tailwind/react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Atropos from 'atropos/react';
-import toast, { Toaster } from 'react-hot-toast';
 import './sidebar.css'
-
-const unavailableToast = () => toast('This feature is unavailable');
-const connectWalletIcon = <FontAwesomeIcon icon={faEnvelope} />
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
   <div className={`w-[48px] h-[48px] rounded-[10px] ${isActive && isActive === name && 'bg-[#2c2f32]'} flex justify-center items-center ${!disabled && 'cursor-pointer'} ${styles}`} onClick={handleClick}>

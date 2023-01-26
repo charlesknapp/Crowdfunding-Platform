@@ -1,1 +1,0 @@
-ReactDOMServer.renderToString(<App/>)

@@ -6,7 +6,7 @@ const Teams = () => {
 
 { /* ============================ MEMBERS ELEMENT ============================ */ }
     <div className="ml-[.85rem] xl:text-end mobile:rounded-xl flex-col rounded-b-xl overflow-hidden relative lg:flex">
-        <div className="flex flex-col mobile:my-6 xl:py-4 mobile:mx-[1rem] md:mx-[3rem] xl:mx-[6rem]">
+        <div className="flex flex-col p-8">
             <p className="text-center lg:text-left xl:max-w-[48ch] mobile:mb-4 text-[22px] sm:text-[30px] md:text-[26px] lg:text-[28px] xl:text-[40px] xl:text-left font-bold text-gray-800 dark:text-white">
                 Join the Movement Towards a More Decentralized World
             </p>

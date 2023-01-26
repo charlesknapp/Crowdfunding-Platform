@@ -43,7 +43,7 @@ const CampaignDetails = () => {
     <div>
       {isLoading && <Loader />}
       { /* FULL CONTAINER*/ }
-      <div className="laptop-l:h-[86vh] laptop:h-[85vh] tablet:h-[85vh] mobile:h-[80vh] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
+      <div className="overflow-auto laptop-l:h-[86vh] laptop:h-[85vh] tablet:h-[85vh] mobile:h-[80vh] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
       { /* ===================== LEFT COLUMN =====================*/ }
       <div id="campaignDetailCol" className="laptop-l:overflow-auto mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 mobile:mb-[2rem] select-none p-2 rounded-2xl sm:flex-row">
         

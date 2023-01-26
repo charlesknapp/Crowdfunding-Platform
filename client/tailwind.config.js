@@ -21,7 +21,7 @@ module.exports = {
           'max': '390px' 
         },
         'mobile': { 
-          'max': '428px' 
+          'max': '472px' 
         },
         'mobile-s': { 
           'max': '320px' 

@@ -45,7 +45,7 @@ const CampaignDetails = () => {
       { /* FULL CONTAINER*/ }
       <div className="laptop-l:h-[86vh] laptop:h-[100%] tablet:h-[100%] mobile:h-[100%] mobile4:flex-col-reverse mobile:flex-col-reverse sm:flex-col xl:flex-row gap-3 flex flex-row">
       { /* ===================== LEFT COLUMN =====================*/ }
-      <div className="laptop-l:overflow-auto mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 mobile:mb-[2rem] select-none p-2 rounded-2xl sm:flex-row">
+      <div id="campaignDetailCol" className="laptop-l:overflow-auto mobile:w-[100%] sm:w-[100%] flex flex-col xl:w-3/4 gap-5 mobile:mb-[2rem] select-none p-2 rounded-2xl sm:flex-row">
         
         <div className="flex-1 flex-col">
           { /* CAMPAIGN IMAGE BANNER */ }
@@ -100,6 +100,7 @@ const CampaignDetails = () => {
           <div className="mobile:mt-4 mr-2 w-[64px] h-[64px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
             <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain"/>
           </div>
+          <p className="laptop:text-[20px] mobile:mb-4 mobile:text-[12px] font-epilogue font-bold text-[26px] text-center text-white">{state.name}</p>
           <p className="max-w-[20ch] laptop:text-[20px] mobile:mb-4 mobile:text-[20px] font-epilogue font-bold text-[26px] text-center text-white">{state.title}</p>
         </div>
         {/* CAMPAIGN WIDGETS */}

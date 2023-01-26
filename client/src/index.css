@@ -39,5 +39,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   *::-webkit-scrollbar-thumb {
     background-color: #1dc071;
     border-radius: 10px;
-    border: 2px solid #13131a;
+    border: 4px solid #13131a;
   }
+/* ===== Hide details scrollbar on campaign details page ===== */
+#campaignDetailCol::-webkit-scrollbar {
+  width: 14px;
+}
+#campaignDetailCol::-webkit-scrollbar-thumb {
+  background-color: #28282E;
+}

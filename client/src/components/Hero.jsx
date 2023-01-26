@@ -6,19 +6,19 @@ const Hero = () => {
     <div>
         { /* ============================ HERO ELEMENT ============================ */ }
         <div className="bg-white dark:bg-[#1c1c24] rounded-t-xl overflow-hidden relative lg:flex lg:items-center">
-            <div className="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-[6rem] z-20">
-                <h2 className="font-extrabold text-black dark:text-white lg:leading-[3.5rem] sm:text-[48px]">
+            <div className="w-full py-12 px-4 sm:px-6 xl:py-16 xl:px-[6rem] z-20">
+                <h2 className="font-extrabold text-black dark:text-white lg:leading-[3.5rem] text-[26px] sm:text-[48px]">
                     <span className="laptop:max-w-[22ch] block">
                         Create Extraordinary Things Together
                     </span>
                 </h2>
-                <p className="text-md mt-4 text-gray-400">
+                <p className="text-md xl:text-xl xl:mt-16 mt-4 text-gray-400">
                     KROWD can help you achieve your crowdfunding campaign goals, powered by the blockchain!
                     Built with ReactJS, NodeJS, Vite, Tailwind CSS and more
                     - KROWD is a fully-responsive solution to your next crowdfunding project.
                 </p>
                 <div className="lg:mt-0 lg:flex-shrink-0">
-                    <div className="gap-4 laptop:w-[100%] max-w-[100%] mt-12 flex rounded-md shadow">
+                    {/* <div className="gap-4 laptop:w-[100%] max-w-[100%] mt-12 flex rounded-md shadow">
                         <a href="/create-campaign">
                             <button type="button" className="laptop:text-[14px] py-2 px-2  bg-[#4ACD8D] hover:bg-green-700 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none  rounded-lg ">
                                 Get Started
@@ -29,14 +29,14 @@ const Hero = () => {
                                 Explore All Campaigns
                             </button>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div className="flex items-center gap-8 p-8 lg:p-24">
-                <img src="https://www.tailwind-kit.com/images/landscape/3.jpg" className="w-1/2 rounded-lg" alt="Tree"/>
+            <div className="flex items-center gap-8 p-8 xl:p-24">
+                <img src="https://i.ibb.co/8cHJ0vN/heroimg-1.png" className="w-1/2 rounded-lg" alt="Tree"/>
                 <div>
-                    <img src="https://www.tailwind-kit.com/images/landscape/2.jpg" className="mb-8 rounded-lg" alt="Tree"/>
-                    <img src="https://www.tailwind-kit.com/images/landscape/4.jpg" className="rounded-lg" alt="Tree"/>
+                    <img src="https://i.ibb.co/Yt5SnpL/heroimg-2.png" className="mb-8 rounded-lg" alt="Tree"/>
+                    <img src="https://i.ibb.co/MMh4hX0/heroimg-3.png" className="rounded-lg" alt="Tree"/>
                 </div>
             </div>
         </div>
@@ -44,10 +44,10 @@ const Hero = () => {
         { /* ============================ MEMBERS ELEMENT ============================ */ }
     <div className="flex-col bg-white dark:bg-[#1c1c24] rounded-b-xl overflow-hidden relative lg:flex">
         <div className="flex flex-col mobile:mx-[1rem] mx-[6rem]">
-            <p className="sm:text-[42px] ml-auto text-3xl font-bold text-center text-gray-800 dark:text-white">
-                Receiving Funding Was Never So Easy
+            <p className="mobile:mb-4 text-[26px] sm:text-[42px] xl:ml-auto font-bold text-center text-gray-800 dark:text-white">
+                Join the Movement Towards a More Decentralized World
             </p>
-            <p className="md:mt-5 ml-auto mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-300">
+            <p className="md:mt-5 xl:ml-auto mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-300">
                 Meet some of the members who've received funding on their projects.
             </p>
         </div>

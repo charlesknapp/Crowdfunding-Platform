@@ -8,8 +8,10 @@ import { Tooltip, Button } from "@material-tailwind/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Atropos from 'atropos/react';
+import toast, { Toaster } from 'react-hot-toast';
 import './sidebar.css'
 
+const unavailableToast = () => toast('This feature is unavailable');
 const connectWalletIcon = <FontAwesomeIcon icon={faEnvelope} />
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
@@ -107,9 +109,9 @@ const Sidebar = () => {
 
         {/* <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun} /> */}
         <div className="bg-[#1c1c24] shadow-secondary w-[48px] h-[48px] rounded-[10px] flex justify-center items-center cursor-pointer">
-            <Tooltip className="shadow-md bg-[#1C1C24] ml-[1.5rem] font-bold" content="Light Mode" placement="right">
+            <Tooltip className="shadow-md bg-[#1C1C24] ml-[1rem] font-bold" content="Light" placement="right">
               <Button variant="gradient">
-                <img src={sun} alt="Home" />
+                <img src={sun} alt="Light Mode" />
               </Button>
             </Tooltip>
         </div>

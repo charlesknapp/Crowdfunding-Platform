@@ -11,6 +11,7 @@
     "font-awesome": "^4.7.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
+    "react-pikaday-datepicker": "^3.0.1",
     "react-transition-group": "^4.4.5"
   }
 }

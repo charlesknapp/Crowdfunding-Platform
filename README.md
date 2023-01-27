@@ -1,11 +1,7 @@
-# React, Web3.0 Crowdfunding-Platform
+# React, Web3.0 Crowdfunding-Platform (Variant 2)
 
 <img src="https://i.ibb.co/ctZmDRy/Explainer-Frame-min.png">
 The next-gen crowdfunding platform. Made with React, Solidity Smart Contracts, and ThirdWeb - This simple crowdfunding application allows users to back projects through the Blockchain and Ethereum.
-
-## [ NEW ] - Variant 2 Under Development
-<p>This site variant brings a sticky navbar, sidebar, and modern content displays.</p>
-<a href="https://github.com/charlesknapp/Crowdfunding-Platform/tree/variant2"><img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png"></a>
 
 ### View Code Statistics
 Want to see exactly how much time was spent on each file, along with detailed project timing information?<br>

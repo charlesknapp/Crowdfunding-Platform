@@ -9,7 +9,7 @@ Check <a href="https://wakatime.com/@charlesknapp/projects/jdpvlktkja?start=2023
 
 ## [ NEW ] - Variant 2 Under Development
 <p>This site variant brings a sticky navbar, sidebar, and modern content displays.</p>
-<img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png">
+<a href="https://github.com/charlesknapp/Crowdfunding-Platform/tree/variant2"><img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png"></a>
 
 ## Wireframe (Figma)
 

@@ -24,6 +24,15 @@ Click the image below to browse this GitHub branch.</p>
 - Hardhat - Ethereum development environment. Compile your contracts and run them on a development network<br>
 - DotENV - Handles the system environment variables<br>
 
+### Future Improvements
+- Better user-authentication methods. Implimentation of a user-account model before the connection of MetaMask.
+- Payment withdrawl functionality. Once users' have completed a campaign, the withdrawl of funds to their PayPal / Bank account.
+- Campaign list sorting. Ability to view by date, and their highest and lowest funding totals.
+
+### Things That Kicked My Boo-tay
+- Handling the Solidity contract was majority of the brainache I received. I'm still navigating Solidity, and have a long way to go in order to fully understand it.
+- Handling the page routing was another pain in the ***. While they function, a re-write of the routing situation is going to happen down the line.
+
 <hr>
 
 ### View Code Statistics

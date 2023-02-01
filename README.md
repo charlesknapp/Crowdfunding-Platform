@@ -9,7 +9,7 @@ Click the image below to browse this GitHub branch.</p>
 <a href="https://github.com/charlesknapp/Crowdfunding-Platform/tree/variant2"><img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png"></a>
 
 ### Client Technologies Used
-- ThirdWeb / Ethers - Handles the smart contract creation, connectivity between Thirdweb smart contracts and MetaMask wallet<br>
+- ThirdWeb / Ethers - Connectivity between Thirdweb smart contracts and MetaMask wallet<br>
 - React - Client side rendering UI and components<br>
 - ReactDOM - provides DOM-specific methods that can be used at the top level of your app<br>
 - React-Router-DOM - Handles the routing and paths for pages<br>

@@ -3,7 +3,7 @@
 <img src="https://i.ibb.co/ctZmDRy/Explainer-Frame-min.png">
 The next-gen crowdfunding platform. Made with React, Solidity Smart Contracts, and ThirdWeb - This simple crowdfunding application allows users to back projects through the Blockchain and Ethereum.
 
-## [ NEW ] - Variant 2 Under Development
+## NEW - Variant 2 Under Development
 <p>This site variant brings a sticky navbar, footer, and modern content displays.<br>
 Click the image below to browse this GitHub branch.</p>
 <a href="https://github.com/charlesknapp/Crowdfunding-Platform/tree/variant2"><img src="https://i.ibb.co/4JLpdBc/krowd-netlify-app.png"></a>

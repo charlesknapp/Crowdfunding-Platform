@@ -18,7 +18,7 @@ Click the image below to browse this GitHub branch.</p>
 - PostCSS - CSS minification and orginization<br>
 - TailwindCSS - Frontend CSS service<br>
 
-## Web3 Technologies Used
+### Web3 Technologies Used
 - Hardhat - Ethereum development environment. Compile your contracts and run them on a development network<br>
 - DotENV - Handles the system environment variables<br>
 

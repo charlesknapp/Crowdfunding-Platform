@@ -22,6 +22,8 @@ Click the image below to browse this GitHub branch.</p>
 - Hardhat - Ethereum development environment. Compile your contracts and run them on a development network<br>
 - DotENV - Handles the system environment variables<br>
 
+<hr>
+
 ### View Code Statistics
 Want to see exactly how much time was spent on each file, along with detailed project timing information?<br>
 Check <a href="https://wakatime.com/@charlesknapp/projects/jdpvlktkja?start=2023-01-21&end=2023-01-27">this link</a> to view the entire code-time statistics.

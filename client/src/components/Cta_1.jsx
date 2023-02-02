@@ -33,10 +33,10 @@ const Cta_1 = () => {
                 </div>
             </div>
             <div className="mobile:mt-[-10%] items-start flex gap-8 p-8">
-                <img src="https://i.ibb.co/8cHJ0vN/heroimg-1.png" className="w-1/2 rounded-lg" alt="Tree"/>
+                <img src="https://i.postimg.cc/Mprh0hRZ/heroimg-1.png" className="w-1/2 rounded-lg" alt="Tree"/>
                 <div>
-                    <img src="https://i.ibb.co/Yt5SnpL/heroimg-2.png" className="mb-8 rounded-lg" alt="Tree"/>
-                    <img src="https://i.ibb.co/MMh4hX0/heroimg-3.png" className="relative z-[100] rounded-lg" alt="Tree"/>
+                    <img src="https://i.postimg.cc/rmyx8YnW/heroimg-2.png" className="mb-8 rounded-lg" alt="Tree"/>
+                    <img src="https://i.postimg.cc/Pf9pcxj1/heroimg-3.png" className="relative z-[100] rounded-lg" alt="Tree"/>
                 </div>
             </div>
         </div>

@@ -105,7 +105,7 @@ const Sidebar = () => {
         <div className="bg-[#1c1c24] shadow-secondary w-[48px] h-[48px] rounded-[10px] flex justify-center items-center cursor-pointer">
             <Tooltip className="shadow-md bg-[#1C1C24] ml-[1rem] font-bold" content="Light" placement="right">
               <Button variant="gradient">
-                <img src={sun} alt="Light Mode" />
+                <img className="max-w-[22px]" src={sun} alt="Light Mode" />
               </Button>
             </Tooltip>
         </div>

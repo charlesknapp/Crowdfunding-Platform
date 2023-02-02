@@ -1,7 +1,9 @@
 import React from 'react';
+{ /* route handler import */}
 import { Route, Routes } from 'react-router-dom';
-
+{ /* component import */}
 import { Footer, Sidebar, Navbar } from './components';
+{ /* page import */}
 import { Login, Landing, CampaignDetails, CreateCampaign, Home, Profile } from './pages';
 
 const App = () => {
@@ -14,6 +16,7 @@ const App = () => {
       <div className="flex-1 max-h-[100%] mobile:max-w-[100%] max-w-[90%] m-auto">
         <Navbar />
 
+        {/* main routes */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -23,6 +26,7 @@ const App = () => {
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
         </Routes>
 
+        {/* footer */}
         <Footer />
       </div>
     </div>

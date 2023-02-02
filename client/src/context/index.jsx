@@ -1,7 +1,9 @@
 import React, { useContext, createContext } from 'react';
-
+// Some of the main CRUD functionality comes from the below import
 import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdweb-dev/react';
+// Ethereuim, Goerli ETH testnet. Allows for test currency during development.
 import { ethers } from 'ethers';
+// Future usage - helper library for Solidity Owner output schema metadata
 import { EditionMetadataWithOwnerOutputSchema } from '@thirdweb-dev/sdk';
 
 const StateContext = createContext();

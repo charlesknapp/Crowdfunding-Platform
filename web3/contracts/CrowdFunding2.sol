@@ -14,6 +14,7 @@ contract CrowdFunding2 {
         uint256[] donations;
     }
 
+    // Map each campaign to an unsigned integer
     mapping(uint256 => Campaign) public campaigns;
 
     uint256 public numberOfCampaigns = 0;

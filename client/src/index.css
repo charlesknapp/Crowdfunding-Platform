@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
 
+/** Importing the TailwindCSS requirements **/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/** ================= COLOR PALLATE - STYLE SUITE ================= **/
+/** Main color pallate **/
 :root {
   --color-primary: #4ACD8D;
   --color-secondary: #8C6DFD;
 }
-/** ================= COLOR PALLATE - STYLE SUITE ================= **/
 
+/** Filler gradient for components **/
 .linear-gradient {
   background: linear-gradient(
     179.14deg,
@@ -19,15 +20,16 @@
   );
 }
 
+/** Date Picker styling **/
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(0.8);
 }
-
+/** Animated campaign banner preferences **/
 .atropos-banner {
   width: 100%;
 }
-/* ===== Scrollbar CSS ===== */
+/* Scrollbar CSS */
   /* Firefox */
   * {
     scrollbar-width: auto;
@@ -48,7 +50,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 10px;
     border: 4px solid #13131a;
   }
-/* ===== Hide details scrollbar on campaign details page ===== */
+/* ===== Hide details scrollbar track on campaign details page ===== */
 #campaignDetailCol::-webkit-scrollbar {
   width: 14px;
 }

@@ -12,7 +12,7 @@ The flow is simple. A user connects their MetaMask wallet, then can create a cam
 - React-Router-DOM - Handles the routing and paths for pages<br>
 - ViteJS - the default project management system for building the application<br>
 - AutoPrefixer - CSS parser and vendor CSS management<br>
-- PostCSS - CSS minification and orginization<br>
+- PostCSS - CSS-in-JS and styles in JS objects.<br>
 - TailwindCSS - Frontend CSS service<br>
 
 ### Web3 Technologies Used
